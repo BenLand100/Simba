@@ -1497,7 +1497,7 @@ begin
     {$IFDEF CPU32}
     if ABI < 2 then
     begin
-      psWriteln('Skipping plugin due to ABI <= 2');
+      psWriteln('Skipping plugin due to ABI < 2');
       exit; // Can't set result?
     end;
     {$ENDIF}
